@@ -50,7 +50,7 @@ void radixSort(std::vector<int>& numbers) {
     }
   }
 
-  // Repeat recursive calls for amount of exponents of max
+  // Repeat countingSort calls for amount of exponents of max
   for (int exp = 1; max / exp > 0; exp *= 10) {
     countingSort(numbers, exp);
   }
